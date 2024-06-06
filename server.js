@@ -35,8 +35,8 @@ const options = {
     cert : fs.readFileSync('certificate.pem'),
 };
 
-const port = 443;
-const hostname = '37.140.192.188';
+const port = 3000;
+const hostname = '127.0.0.1';
 
 const server = https.createServer(options, (request, response) => {
     response.writeHead(200);
