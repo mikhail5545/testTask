@@ -30,7 +30,10 @@ function convertCertificate (cert) {
     return result;
 }
 
-
+const options = {
+    key : fs.readFileSync('certificate_key.pem'),
+    cert : fs.readFileSync('certificate.pem'),
+};
 
 const port = 443;
 const hostname = '37.140.192.188';
